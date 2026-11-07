@@ -1,38 +1,66 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Lenni</title>
 </head>
-<body class="main-body">
-    <header class="main-menu">
-      <a href="#"></a>
-      <nav>
-        <a class="main-menu__menu-item" href="#">Мероприятия</a>
-        <a class="main-menu__menu-item" href="#">Блог</a>
-        <a class="main-menu__menu-item" href="#">О нас</a>
-        <a class="main-menu__menu-item" href="#">Контакты</a>
-      </nav>
+
+<body class="body">
+    <header class="page-header">
+        <a class="page-header__logo" href="#">Logo</a>
+        <nav class="page-header__nav">
+            <a class="page-header__nav-link" href="#">Мероприятия</a>
+            <a class="page-header__nav-link" href="#">Блог</a>
+            <a class="page-header__nav-link" href="#">О нас</a>
+            <a class="page-header__nav-link" href="#">Контакты</a>
+        </nav>
+        <a class="page-header__user-link" href="#">Войти</a>
     </header>
-    <main>
-      <header class="main-header" () >
-        <h1>АРТ-ПРОСТРАНСТВО</h1>
-      </header>
-      <section>
-        <h2 class="article-header">О НАС</h2>
-      </section>
-      <section>
-        <h2 class="article-header">Мероприятия</h2>
-      </section>
-      <section>
-        <h2 class="article-header">Блог</h2>
-      </section>
-      <section>
-        <h2 class="article-header">Контакты</h2>
-      </section>
+    <main class="main">
+        <div class="home">
+
+            <header class="main-header home__main-header" ()>
+                <h1>АРТ-ПРОСТРАНСТВО</h1>
+                <img />
+                <p>Для людей, горящих сердцем и делом. Место для настоящего
+                    <p />
+            </header>
+
+            <section class="offers home__offers">
+                <h4 class="offers__title">Я хочу:</h4>
+                <div class="offers__btns">
+                    <button type="button" class="offers__btn btn btn--red">Провести мероприятие</button>
+                    <button type="button" class="offers__btn btn">Стать арендатором</button>
+                </div>
+            </section>
+
+            <section class="about home__about">
+                <h2 class="abot__section-title section-title">О НАС</h2>
+                <div class="about__container"></div>
+            </section>
+
+            <section class="upcoming home__upcoming">
+                <h2 class="upcoming__section-title section-title">Мероприятия</h2>
+                <div class="upcomin__container"></div>
+            </section>
+
+            <section class="listing home__listing">
+                <h2 class="section-title listing__section-title">Блог</h2>
+                <div></div>
+            </section>
+
+            <section class="contacts home__contacts">
+                <h2 class="contacts__section-title sction-title">Контакты</h2>
+                <div class="contacts__container"></div>
+            </section>
+
+            <div class="doit"></div>
+
+        </div>
     </main>
-    <footer class="main-footer">
+    <footer class="page-footer">
     </footer>
 </body>
