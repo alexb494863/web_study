@@ -1,5 +1,6 @@
 import gulp from "gulp";
-import { deleteSync } from "del";
+//import { deleteSync } from "del";
+import { rmSync } from 'fs';
 
 import include from "gulp-file-include";
 import formatHtml from "gulp-format-html";
@@ -45,7 +46,8 @@ const resources = {
 // Gulp Tasks:
 
 function clean(done) {
-  deleteSync(["dist"]);
+  //deleteSync(["dist"]);
+  rmSync('dist', { recursive: true, force: true });
   done();
 }
 
