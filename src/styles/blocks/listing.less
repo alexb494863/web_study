@@ -27,4 +27,27 @@
         width: cals(33.3333% - 58px);
         margin: 0 29px 120px;
     }
+    &__view-all-link {
+       text-decoration: none;
+       font-family: @font1;
+       font-size: 20px;
+       font-weight: 600px;
+       text-align: right;
+       margin-top: 20px;
+       &:hover {
+           color: magenta;
+           transition: color 0.2s;
+           animation: blink-effect 1s infinite;
+       }
+
+       @keyframes blink-effect {
+           0%, 100% {
+               opacity: 1;
+           }
+           50% {
+               opacity: 0;
+           }
+       }
+
+    }
 }
