@@ -1,69 +1,109 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
 
-    <title>Lenni</title>
-</head>
+        <title>Lenni</title>
+    </head>
 
-<body class="body">
+    <body class="body">
 
-    <header class="page-header">
-        <div class="page-header__container">
-            <a class="page-header__logo" href="#">
-                <img class="page-header__logo-icon" src="images/logo.svg" alt="Logo" />
-            </a>
-            <nav class="page-header__nav">
-                <a class="page-header__nav-link" href="#">Мероприятия</a>
-                <a class="page-header__nav-link" href="#">Блог</a>
-                <a class="page-header__nav-link" href="#">О нас</a>
-                <a class="page-header__nav-link" href="#">Контакты</a>
-            </nav>
-            <div class="page-header__fight-block">
-                <a class="page-header__user-link btn" href="#">Войти</a>
+        <header class="page-header">
+            <div class="page-header__container">
+                <a class="page-header__logo" href="#">
+                    <img class="page-header__logo-icon" src="images/logo.svg" alt="Logo" />
+                </a>
+                <nav class="page-header__nav">
+                    <a class="page-header__nav-link" href="#">Мероприятия</a>
+                    <a class="page-header__nav-link" href="#">Блог</a>
+                    <a class="page-header__nav-link" href="#">О нас</a>
+                    <a class="page-header__nav-link" href="#">Контакты</a>
+                </nav>
+                <div class="page-header__fight-block">
+                    <a class="page-header__user-link btn" href="#">Войти</a>
+                </div>
+
             </div>
+        </header>
 
-        </div>
-    </header>
+        <main class="main">
 
-    <main class="main">
+            <article class="event">
 
-        <article class="event">
+                <div class="event__content content">
+                    <h5>Программа мероприятия</h5>
 
-            <form class="event event__reserve">
+                    <ul>
+                        <li>20:15 — Приветствие гостей</li>
+                        <li>20:30 — Первая подача блюд | Салаты</li>
+                        <li>20:40 — Живой вокал | Композиции 1-3</li>
+                        <li>21:20 — Подача горячих блюд</li>
+                        <li>21:30 — Живой вокал | Композиции 4-7</li>
+                        <li>22:15 — Подача десерта</li>
+                        <li>22:30 — Живой вокал | Композиции 8-9  </li>
+                        <li>23:00 — Завершение вечера</li>
+                    </ul>
 
-                <div class=reserve__checks>
-                    Чекбоксы
+                    <h5>Best of Sade</h5>
+
+                    <p>
+                        Первый альбом-компиляция Sade, выпущенный в 1994 году. Он содержит 9 треков,
+                        включая самые популярные хиты группы, раритеты и их любимые треки.
+                    </p>
+
+                    <p>
+                        Группа продемонстрировала необычайное долголетие и креативность своей творческой
+                        карьеры. Она лидировала музыкальных чартах с 1994 по 1995 год, став
+                        четырехкратно платиновой в США и продав более 2 миллионов копий в Европе.
+                    </p>
+
+                    <ol>
+                        <li>Your Love Is King                 </li>
+                        <li>Hang On To Your Love              </li>
+                        <li>Smooth Operator                   </li>
+                        <li>Jezebel                           </li>
+                        <li>The Sweetest Taboo                </li>
+                        <li>Is It A Crime                     </li>
+                        <li>Never As Good As The First Time   </li>
+                        <li>Love Is Stronger Than Pride       </li>
+                        <li>Paradise                          </li>
+                    </ol>
                 </div>
 
-                <div class=reserve__scheme>
-                    Схема столов
-                </div>
+                <form class="event event__reserve">
 
-                <div class=reserve__order>
-                    Оформление заказа
-                </div>
+                    <div class=reserve__checks>
+                        Чекбоксы
+                    </div>
 
-                <div class=reserve__legend>
-                    Легенда
-                </div>
+                    <div class=reserve__scheme>
+                        Схема столов
+                    </div>
 
-            </form>
+                    <div class=reserve__order>
+                        Оформление заказа
+                    </div>
 
-        </article>
+                    <div class=reserve__legend>
+                        Легенда
+                    </div>
 
-    </main>
+                </form>
 
-    <footer class="page-footer">
-        footer
-    </footer>
-</body>
+            </article>
+
+        </main>
+
+        <footer class="page-footer">
+            footer
+        </footer>
+    </body>
