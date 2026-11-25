@@ -6,6 +6,26 @@
         "checks scheme"
         "order legend";
     width: 100%;
+    @media @bw1340 {
+        grid-template-columns: 340px 1fr;
+        gap: 65px 6.5%;
+    }
+    @media @bw1020 {
+        grid-template-columns: 1fr 390px;
+        gap: 60px;
+        grid-template-areas:
+            "schema schema"
+            "checks legend"
+            "checks order";
+    }
+    @media @bw768 {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "schema"
+            "legend"
+            "checks"
+            "order ";
+    }
 
     &__checks {
         grid-area: checks;
