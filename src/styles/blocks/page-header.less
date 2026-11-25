@@ -4,17 +4,43 @@
     left: 0;
     width: 100%;
     height: 147px;
-    background-color: rgba(222, 222, 222, 0.5);
-    backdrop-filter: blur(20px);
+    z-index: 100;
+    @media @bw1660 {
+        height: 111px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100px %;
+        height: 100px %;
+        backdrop-filter: blur(20px);
+        background: rgba(222,222,222, 0.5);
+    }
+
     &__container{
         .container();
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
     }
+
     &__logo {
         flex-shrink: 0;
         font-size: 0;
         width: 202px;
         height: 147px;
+        @media @bw1660 {
+            width: 152px;
+            height: 111px;
+        }
     }
+
     &__logo-icon {
         width: 100%;
         height: 100%;
@@ -24,6 +50,7 @@
         align-items: baseline;
         margin: 0 auto;
         gap: 50px;
+        display: none;
     }
     &__nav-link {
         color: @black;
@@ -36,11 +63,57 @@
     &__nav-link:hover {
         color: @red;
     }
-    &__fight-block {
+    &__right-block {
         display: flex;
         justify-content: flex-end;
         align-items: center;
         width: 202px;
+        @media @bw1660 {
+            width: 152px;
+        }
+        @media @bw1020 {
+            width: auto;
+            margin-left: auto;
+        }
     }
 
+    &__btn {
+        display: inline-flex;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 15px 40px;
+        border: 1px solid @black;
+        text-decoration: none;
+        background-color: transparent;
+        outline: none;
+        color: @black;
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.375;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        transition: background-color 0.2s, color 0.2s;
+        @media @bw1020 {
+            width: 40px;
+            height: 40px;
+            padding: 0px;
+            border: none;
+            font-size: 0px;
+        }
+        &:hover,
+        &:active {
+            background-color: @black;
+            color: @white;
+        }
+    }
+    &__user-icon {
+        display: none;
+        @media @bw1020 {
+            display: block;
+            margin: auto;
+        }
+
+    }
 }
