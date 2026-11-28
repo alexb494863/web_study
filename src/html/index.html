@@ -18,36 +18,24 @@
             </header>
 
             <section class="offers home__offers">
-                <h4 class="offers__title">Я хочу:</h4>
+                <h4 class="offers__title">Я ХОЧУ:</h4>
                 <div class="offers__btns">
                     <button type="button" class="offers__btn btn btn--red">Провести мероприятие</button>
                     <button type="button" class="offers__btn btn">Стать арендатором</button>
                 </div>
             </section>
 
-            <section class="about home__about">
-                <h2 class="abot__section-title section-title">О НАС</h2>
-                <div class="about__container"></div>
-            </section>
+            @@include('blocks/about.html')
+
+            @@include('blocks/upcomming.html')
 
             @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
-            <section class="upcoming home__upcoming">
-                <h2 class="upcoming__section-title section-title">Мероприятия</h2>
-                <div class="upcomin__container"></div>
-            </section>
+            @@include('blocks/contacts.html')
 
-            <section class="listing home__listing">
-                <h2 class="section-title listing__section-title">Блог</h2>
-                <div></div>
-            </section>
+            <div class="doit">
 
-            <section class="contacts home__contacts">
-                <h2 class="contacts__section-title sction-title">Контакты</h2>
-                <div class="contacts__container"></div>
-            </section>
-
-            <div class="doit"></div>
+            </div>
 
         </div>
     </main>
